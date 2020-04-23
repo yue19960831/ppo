@@ -45,12 +45,12 @@ class args(object):
     lr = 3e-3
     num_parallel_run = 5
     # tricks
-    schedule_adam = 'linear1'
-    schedule_clip = 'linear1'
+    schedule_adam = 'linear'
+    schedule_clip = 'linear'
     layer_norm = True
-    state_norm = False
-    advantage_norm = False
-    lossvalue_norm = False
+    state_norm = True
+    advantage_norm = True
+    lossvalue_norm = True
 
 
 class RunningStat(object):
